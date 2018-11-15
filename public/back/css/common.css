@@ -36,8 +36,13 @@ ul{
   left: 0;
   background-color: #222D32;
   z-index: 999;
-
+  transition: all 1s;
 }
+
+.lt_aside.hidemenu {
+  left: -180px;
+}
+
 .lt_aside .brand{
   width: 180px;
   height: 50px;
@@ -90,4 +95,14 @@ ul{
   padding-left: 60px;
 }
 
+.lt_main{
+  height: 1000px;
+  padding-left: 180px;
+  padding-top: 50px;
+  transform: all 1s;
+}
+
+.lt_main.hidemenu {
+  padding-left: 0px
+}
 

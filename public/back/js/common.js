@@ -35,3 +35,15 @@ $(document).ajaxStop(function(){
   },500);
   
 });
+
+// jquery 入口函数,等待dom 结构加载完成之后,就执行
+$(function(){
+  // 公共的功能
+  //功能1:导航点击切换功能
+  $(".lt_aside .category").click(function(){
+    // 让下一个兄弟元素切换显示影藏
+    $(this).next().stop().slideToggle();
+  
+    // alert(0);
+  });
+})
