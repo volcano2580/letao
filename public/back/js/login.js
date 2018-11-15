@@ -63,9 +63,9 @@ $(function(){
     //    2. 在事件中,阻止默认的表单提交,通过ajax提交即可
 
 
-    // $('#form').on("success.form.bv",function(e){
+    $('#form').on("success.form.bv",function(e){
       
-    // })
+    })
 
 
 
