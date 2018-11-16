@@ -44,7 +44,7 @@
              </div>
            </li>
            <li>
-              <a href="product.html">
+              <a class="current" href="product.html">
               <i class="glyphicon glyphicon-tags"></i>
               <span>商品管理</span>
              </a>
@@ -68,18 +68,17 @@
       <!-- 连接导航 -->
       <ol class="breadcrumb mt_20">
         <li><a href="index.html">管理系统</a></li>
-        <li class="active">首页</li>
+        <li class="active">用户管理</li>
+        <li class="active">一级分类</li>
       </ol>
 
-   <!-- 容器  需要准备有宽高的容器 -->
-     <div class="lt_content">
-       <!-- 左侧的柱状图 -->
-       <div class="echarts_left pull-left"></div>
-       <!-- 右侧的饼状图 -->
-      <div class="echarts_right pull-right"></div>
-     </div>
+    
     </div>
   </div>
+
+
+
+
 
   <!-- 退出模态框 -->
   <!-- 模态框大小:modal-lg  大型  默认中型  modal-sm  小型 -->
@@ -106,22 +105,17 @@
     </div>
   </div>
 
-
-
-
-
-
-
+ 
 
 <script src="./lib/jquery/jquery.min.js"></script>
 <script src="./lib/bootstrap/js/bootstrap.min.js"></script>
 <script src="./lib/bootstrap-validator/js/bootstrapValidator.min.js"></script>
 <script src="./lib/nprogress/nprogress.js"></script>
-<script src="./lib/echarts/echarts.min.js"></script>
 <script src="./js/common.js"></script>
+<!-- 判断用户时否登录 -->
+<script src="./js/isLogin.js"></script>
 
-<script src="./js/login.js"></script>
-<script src="./js/index.js"></script>
+
 
 
 </body>

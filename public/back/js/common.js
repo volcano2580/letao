@@ -46,4 +46,44 @@ $(function(){
   
     // alert(0);
   });
+
+  // 功能2: 左侧菜单列表切换功能
+$(".lt_topbar .icon_left").click(function(){
+  $(".lt_aside").toggleClass("hidemenu");
+  $(".lt_main").toggleClass("hidemenu");
+  $(".lt_topbar").toggleClass("hidemenu");
 })
+
+
+// 功能3: 退出功能
+ $(".lt_topbar .icon_right").click(function(){
+  //  alert(0);
+  //  点击按钮,显示模态框
+  $('#logoutModal').modal("show");
+  })
+
+
+  $("#logoutBtn").click(function(){
+      // alert(0);
+    // 发送ajax请求,让后台销毁当前用户的登录状态
+    $.ajax({
+      type:"get",
+      url: "/employee/employeeLogout",
+      dataType:"json",
+      success:function(info){
+        console.log(info);
+        if(info.success){
+          // 退出成功
+          location.href="login.html";
+        }
+        
+      }
+    });
+ })
+
+
+
+
+})
+
+
